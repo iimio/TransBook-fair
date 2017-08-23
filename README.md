@@ -79,7 +79,7 @@ TransBook fair 運営委員会
 上記の概要文にも記載しました通り、「本」という形態を取っていればどのようなアウトプットでも販売できる書店を目指しております。
 紙に限らずどんな媒体でも結構です。
 
-もしご興味を持って頂ける場合は、大変お手数ですが [Issue を新たに作って](https://github.com/iimio/TransBook-fair/issues/new) お返事のコメントいただくか、 transbook-fair-office@googlegroups.com までご連絡ください。
+もしご興味を持って頂ける場合は、大変お手数ですが [Issue を新たに作って](https://github.com/iimio/TransBook-fair/issues/new) お返事のコメントを書きこんでいただくか、 transbook-fair-office@googlegroups.com までご連絡ください。
 
 ご検討のほどよろしくお願いします。
 
