@@ -1,0 +1,39 @@
+
+.social {
+  background: $color-lightgray;
+  bottom: 0;
+  font-size: 12px;
+  height: 40px;
+  left: 0;
+  line-height: 1;
+  overflow: hidden;
+  padding-top: 10px;
+  position: fixed;
+
+  text-align: center;
+  width: 100%;
+
+  a {
+    color: $color-facebook;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    text-decoration: none;
+    &:after {
+      background: $color-facebook;
+      bottom: -2px;
+      content: '';
+      height: 1px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+    }
+
+    &.twitter {
+      color: $color-twitter;
+      &:after {
+        background: $color-twitter;
+      }
+    }
+  }
+}

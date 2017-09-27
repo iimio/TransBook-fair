@@ -1,0 +1,17 @@
+.section-head{
+  text-align: center;
+  span{
+    font-weight: 600;
+    border-bottom: 3px solid $color-black;
+    font-size: 36px;
+
+    @include less-tablet(){
+      font-size: 24px;
+    }
+
+    @include less-sp(){
+      font-size: 18px;
+    }
+
+  }
+}

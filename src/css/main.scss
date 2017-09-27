@@ -1,8 +1,102 @@
-*{
+@font-face {
+  font-family: "Hiragino Sans";
+  src: local(HiraginoSans-W0);
+  font-weight: 100;
+}
+@font-face {
+  font-family: "Hiragino Sans";
+  src: local(HiraginoSans-W1);
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Hiragino Sans";
+  src: local(HiraginoSans-W2);
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Hiragino Sans";
+  src: local(HiraginoSans-W3);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Hiragino Sans";
+  src: local(HiraginoSans-W4);
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Hiragino Sans";
+  src: local(HiraginoSans-W5);
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Hiragino Sans";
+  src: local(HiraginoSans-W6);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Hiragino Sans";
+  src: local(HiraginoSans-W7);
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Hiragino Sans";
+  src: local(HiraginoSans-W8);
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Hiragino Sans W9";
+  src: local(HiraginoSans-W9);
+  font-weight: 900;
+}
+
+@import "includes/vars";
+@import "includes/normalize";
+@import "includes/mixin";
+@import "includes/mixin.responsive";
+@import "settings";
+@import "mixins/elastic-responsive";
+@import 'module/compornents/section-head';
+@import 'module/social';
+@import 'module/cover';
+@import 'module/map';
+@import 'module/introduction';
+@import 'module/artists';
+@import 'module/elastic';
+@import 'module/hidden-bg';
+
+* {
   box-sizing: border-box;
 }
 
-html, body{
+html, body {
   margin: 0;
-  text-align: center;
+  font-size: 14px;
+  line-height: 1.8em;
+  font-weight: 200;
+  letter-spacing: 0.01em;
+  font-family: $font-family;
+  background: $color-true-black;
+}
+
+.wrapper {
+  background: $color-lightgray;
+  position: relative;
+  z-index: 3;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 200;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  li {
+    margin: 0;
+  }
+}
+
+footer{
+  padding-top: 400px;
 }

@@ -1,0 +1,35 @@
+.artists {
+  font-size: 36px;
+  line-height: 1.6em;
+  text-align: justify;
+
+  @include less-tablet(){
+    font-size: 24px;
+  }
+  @include less-sp(){
+    font-size: 18px;
+  }
+
+
+  ul {
+    margin: 1em 0;
+    li {
+      display: inline;
+      .small {
+        display: inline;
+        font-size: 18px;
+
+        @include less-tablet(){
+          font-size: 14px;
+        }
+      }
+      &:after {
+        content: " / ";
+        display: inline;
+        font-weight: 100;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+      }
+    }
+  }
+}
