@@ -4,6 +4,7 @@
   height: calc(100vh - 40px);
   position: relative;
   width: 100%;
+  //transition: all 0.3s $easein
 
   &__logo {
     display: table;
@@ -12,10 +13,14 @@
     width: 100%;
   }
 
-  h1 {
+  &__title {
     padding: 20px;
-    line-height: 2em;
+    line-height: 1.1em;
     font-size: $fs-xxlarge;
+    position: fixed;
+    top: 0;
+    left: 0;
+
   }
 
   h2 {

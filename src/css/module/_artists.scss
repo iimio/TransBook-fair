@@ -3,6 +3,8 @@
   line-height: 1.6em;
   text-align: justify;
   padding: 0 20px;
+  position: relative;
+  top: 200px;
 
   @include less-tablet() {
     font-size: $fs-large;

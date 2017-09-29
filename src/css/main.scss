@@ -57,6 +57,7 @@
 @import "mixins/elastic-responsive";
 @import 'module/compornents/section';
 @import 'module/social';
+@import 'module/logos';
 @import 'module/cover';
 @import 'module/map';
 @import 'module/introduction';
@@ -100,4 +101,8 @@ ul {
 
 footer{
   padding-top: 400px;
+}
+
+.small{
+  font-size: 0.8em;
 }

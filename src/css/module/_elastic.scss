@@ -1,27 +1,40 @@
-
 @keyframes elastic {
-  0%{
-    max-width: 100%;
+  0% {
+    max-width: 100vw;
+    height: 100vh;
+    margin-top: 0;
   }
 
-  40%{
+  //40% {
+  //  max-width: 320px;
+  //  height: 568px;
+  //  margin-top: calc((100vh - 568px) / 2);
+  //}
+  50% {
     max-width: 320px;
-  }
-  50%{
-    max-width: 320px;
-  }
-
-  90%{
-    max-width: 100%;
+    height: 80vh;
+    margin-top: calc((100vh - 80vh) / 2);
   }
 
-  100%{
-    max-width: 100%;
+  //90% {
+  //  max-width: 100vw;
+  //  height: 100vh;
+  //  margin-top: 0;
+  //}
+
+  100% {
+    max-width: 100vw;
+    height: 100vh;
+    margin-top: 0;
   }
 }
 
-.elastic{
+.elastic {
+  animation: elastic 60s 5s linear infinite;
+  //animation: elastic 60s 5s $easeInOutQuart infinite;
+  height: 100vh;
   margin: 0 auto;
-  width: 100%;
-  animation: elastic 180s 5s linear infinite;
+  overflow-y: scroll;
+  width: 100vw;
+  -webkit-overflow-scrolling: touch;
 }
