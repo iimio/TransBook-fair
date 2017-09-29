@@ -1,59 +1,55 @@
 .cover {
+  background: url('/assets/images/logo.svg') center;
+  background-size: contain;
   height: calc(100vh - 40px);
   position: relative;
   width: 100%;
 
-  &__logo{
-    position: absolute;
+  &__logo {
     display: table;
-    width: 100%;
     height: 100vh;
-
-    h1 {
-      display: table-cell;
-      vertical-align: middle;
-
-      img {
-      display: block;
-        margin: 0 auto;
-        max-width: 600px;
-        height: auto;
-      }
-    }
-
-  }
-
-
-  h2{
-    font-size: 36px;
-    line-height: 1.6em;
-    text-align: center;
-
-    @include less-tablet(){
-      font-size: 24px;
-    }
-    @include less-sp(){
-      font-size: 18px;
-    }
-  }
-
-  &__date{
-    font-size: 36px;
-    line-height: 1.6em;
-    text-align: center;
-
-    @include less-tablet(){
-      font-size: 24px;
-    }
-    @include less-sp(){
-      font-size: 18px;
-    }
-  }
-
-  &__description{
     position: absolute;
-    bottom: 60px;
     width: 100%;
+  }
+
+  h1 {
+    padding: 20px;
+    line-height: 2em;
+    font-size: $fs-xxlarge;
+  }
+
+  h2 {
+    font-size: $fs-xlarge;
+
+    line-height: 1.6em;
+    padding: 0 20px;
     text-align: center;
+
+    @include less-tablet() {
+      font-size: $fs-large;
+    }
+    @include less-sp() {
+      font-size: $fs-medium;
+    }
+  }
+
+  &__date {
+    font-size: $fs-xlarge;
+    line-height: 1.6em;
+    text-align: center;
+
+    @include less-tablet() {
+      font-size: $fs-large;
+    }
+    @include less-sp() {
+      font-size: $fs-medium;
+    }
+  }
+
+  &__description {
+    bottom: 60px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
   }
 }

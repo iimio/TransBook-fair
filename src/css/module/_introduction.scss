@@ -1,13 +1,14 @@
 .introduction{
   text-align: justify;
-  font-size: 36px;
+  font-size: $fs-xlarge;
+  padding: 0 20px;
 
   @include less-tablet(){
-    font-size: 24px;
+    font-size: $fs-large;
   }
 
   @include less-sp(){
-    font-size: 18px;
+    font-size: $fs-medium;
   }
 
   line-height: 1.6em;

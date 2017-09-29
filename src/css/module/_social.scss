@@ -1,17 +1,15 @@
 
 .social {
-  background: $color-lightgray;
   bottom: 0;
-  font-size: 12px;
+  font-size: $fs-normal;
   height: 40px;
   left: 0;
   line-height: 1;
   overflow: hidden;
   padding-top: 10px;
   position: fixed;
-
-  text-align: center;
   width: 100%;
+  padding-left: 1em;
 
   a {
     color: $color-facebook;

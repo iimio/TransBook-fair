@@ -1,34 +1,28 @@
 .artists {
-  font-size: 36px;
+  font-size: $fs-xlarge;
   line-height: 1.6em;
   text-align: justify;
+  padding: 0 20px;
 
-  @include less-tablet(){
-    font-size: 24px;
+  @include less-tablet() {
+    font-size: $fs-large;
   }
-  @include less-sp(){
-    font-size: 18px;
+  @include less-sp() {
+    font-size: $fs-medium;
   }
-
 
   ul {
     margin: 1em 0;
     li {
       display: inline;
+      padding-right: 1em;
       .small {
         display: inline;
-        font-size: 18px;
+        font-size: $fs-medium;
 
-        @include less-tablet(){
-          font-size: 14px;
+        @include less-tablet() {
+          font-size: $fs-normal;
         }
-      }
-      &:after {
-        content: " / ";
-        display: inline;
-        font-weight: 100;
-        margin-left: 0.5em;
-        margin-right: 0.5em;
       }
     }
   }
