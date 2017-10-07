@@ -8,7 +8,9 @@ export default class Elastic {
    */
   constructor() {
     this._$elastic = $(".elastic");
+    this._$elasticCover = $(".top-cover");
     this._$button = $('.js-play-elastic a');
+
 
     this._breakpoints = [
       {name: 'sp', width: 600},
@@ -29,6 +31,11 @@ export default class Elastic {
       this._$elastic.css(this._playState, function (i, v) {
         return v === 'paused' ? 'running' : 'paused';
       });
+
+      this._$elasticCover.css(this._playState, function (i, v) {
+        return v === 'paused' ? 'running' : 'paused';
+      });
+
       this._updateState();
     });
     this._updateState();
@@ -38,7 +45,7 @@ export default class Elastic {
     let currentState = this._$elastic.css(this._playState);
     $('body').toggleClass('paused', currentState === 'paused');
     this._$button.text((currentState === 'running') ? 'Pause' : 'Play');
-
+    // this._$elastic.toggleClass('resizable', currentState === 'paused');
   }
 
   /**

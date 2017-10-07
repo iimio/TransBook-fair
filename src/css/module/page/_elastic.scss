@@ -28,9 +28,30 @@
     max-width: 100vw;
   }
 }
+@keyframes elastic-top-cover {
+  0% {
+    height: 100vh;
+  }
+
+  40% {
+    height: 480px;
+  }
+
+  60% {
+    height: 480px;
+  }
+
+  90% {
+    height: 100vh;
+  }
+
+  100% {
+    height: 100vh;
+  }
+}
 
 .elastic {
-  animation: elastic 120s 7s linear infinite;
+  animation: elastic 120s 1s linear infinite;
   margin: 0 auto;
   overflow-x: hidden;
   overflow-y: scroll;
@@ -41,4 +62,12 @@
   top: 0;
   width: 100vw;
   -webkit-overflow-scrolling: touch;
+
+  &.resizable {
+    resize: both;
+  }
+
+  .top-cover{
+    animation: elastic-top-cover 120s 7s linear infinite;
+  }
 }
