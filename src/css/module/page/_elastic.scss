@@ -1,0 +1,29 @@
+@keyframes elastic {
+  0% {
+    max-width: 100vw;
+  }
+
+  40% {
+    max-width: 320px;
+  }
+
+  50% {
+    max-width: 320px;
+  }
+
+  90% {
+    max-width: 100vw;
+  }
+
+  100% {
+    max-width: 100vw;
+  }
+}
+
+.elastic {
+  //border-right: 1px solid $color-lightgray;
+  //border-left: 1px solid $color-lightgray;
+  animation: elastic 120s 7s linear infinite;
+  margin: 0 auto;
+  width: 100vw;
+}

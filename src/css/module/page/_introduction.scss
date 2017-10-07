@@ -1,0 +1,26 @@
+.introduction {
+  text-align: justify;
+  font-size: 24px;
+  line-height: 2em;
+  padding: 0 20px;
+  overflow: hidden;
+  margin: 64px auto 0 auto;
+
+
+  .is-tablet &{
+    font-size: 20px;
+  }
+
+  .is-sp &{
+    font-size: 18px;
+  }
+
+  &__message {
+    p {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+  }
+}

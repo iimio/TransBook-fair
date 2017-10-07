@@ -55,15 +55,25 @@
 @import "includes/mixin.responsive";
 @import "settings";
 @import "mixins/elastic-responsive";
-@import 'module/compornents/section';
-@import 'module/social';
-@import 'module/logos';
-@import 'module/cover';
-@import 'module/map';
-@import 'module/introduction';
-@import 'module/artists';
-@import 'module/elastic';
-@import 'module/hidden-bg';
+
+@import 'layouts/base';
+@import 'module/page/top-cover';
+@import 'module/page/info';
+@import 'module/page/artists';
+@import 'module/page/introduction';
+@import 'module/page/map';
+@import 'module/page/sns';
+@import 'module/page/copyright';
+//@import 'module/page/elastic';
+
+//@import 'module/compornents/section';
+//@import 'module/social';
+//@import 'module/logos';
+//@import 'module/cover';
+//@import 'module/map';
+//@import 'module/introduction';
+//@import 'module/artists';
+//@import 'module/hidden-bg';
 
 * {
   box-sizing: border-box;
@@ -73,15 +83,15 @@ html, body {
   margin: 0;
   font-size: $fs-normal;
   line-height: 1.8em;
-  font-weight: 600;
   letter-spacing: 0.01em;
   font-family: $font-family;
-  color: $color-white;
+  color: $color-black;
   background: $color-background;
+  -webkit-font-smoothing: antialiased;
 }
 
 .wrapper {
-  background: $color-gray;
+  background: $color-lightgray;
   position: relative;
   z-index: 3;
 }
@@ -89,6 +99,7 @@ html, body {
 
 h1, h2, h3, h4, h5 {
   margin: 0;
+  font-weight: normal;
 }
 
 ul {
@@ -99,10 +110,3 @@ ul {
   }
 }
 
-footer{
-  padding-top: 400px;
-}
-
-.small{
-  font-size: 0.8em;
-}

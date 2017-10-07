@@ -1,6 +1,12 @@
 // font-family
 // ===========
-$font-family: "Avenir", "Hiragino Sans","ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "Helvetica Neue", Helvetica, Arial, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+@font-face {
+  font-family: "Yu Gothic";
+  src: local("Yu Gothic Medium");
+  font-weight: 400;
+}
+
+$font-family: "Helvetica",Helvetica, "Yu Gothic",  "游ゴシック", "Yu Gothic", YuGothic, "Hiragino Sans", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "Helvetica Neue", Helvetica, Arial, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 
 // font-size
 // =========
@@ -23,7 +29,7 @@ $color-black: #22313F;
 $color-facebook: #3b5998;
 $color-twitter: #00aced;
 $color-white: #fff;
-$color-lightgray: #D2D7D3;
+$color-lightgray: #e3e3e3;
 $color-gray: #727071;
-$color-background: #333333;
+$color-background: $color-white;
 $color-transparent: rgba(0, 0, 0, 0);

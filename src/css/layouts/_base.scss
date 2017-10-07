@@ -1,0 +1,43 @@
+$gritter: 8px;
+
+.l-content {
+  margin: 0 auto;
+  margin-top: ($gritter*5);
+  max-width: 800px;
+}
+
+.section-head {
+  font-size: 24px;
+  margin: 64px 0 24px;
+  text-align: center;
+
+  .is-tablet & {
+    font-size: 20px;
+  }
+
+  .is-sp & {
+    font-size: 18px;
+  }
+
+  > span {
+    //background-color: white;
+    border-bottom: 1px solid $color-black;
+  }
+}
+
+.section-content {
+  font-size: 24px;
+  padding: 0 20px;
+
+  .is-tablet & {
+    font-size: 20px;
+  }
+
+  .is-sp & {
+    font-size: 18px;
+  }
+
+  &.is-center {
+    text-align: center;
+  }
+}

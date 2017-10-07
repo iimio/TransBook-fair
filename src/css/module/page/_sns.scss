@@ -1,0 +1,25 @@
+.sns {
+  padding: 0 0 80px 0;
+  &__links {
+    list-style: none;
+    overflow: hidden;
+    text-align: center;
+    li {
+      display: inline-block;
+      margin: 0 1em;
+      padding-bottom: 1em;
+      a {
+        background-color: $color-twitter;
+        border-radius: 20px;
+        color: $color-white;
+        display: inline-block;
+        padding: 2px 8px;
+        width: 150px;
+        text-decoration: none;
+        &.facebook {
+          background-color: $color-facebook;
+        }
+      }
+    }
+  }
+}

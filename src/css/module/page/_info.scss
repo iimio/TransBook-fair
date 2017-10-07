@@ -1,0 +1,64 @@
+.info {
+  line-height: 2em;
+  overflow: hidden;
+
+  &__left {
+    float: left;
+  }
+
+  &__right {
+    float: right;
+  }
+
+  &__title {
+    font-size: 24px;
+
+    line-height: 2em;
+
+    .is-tablet & {
+      font-size: 20px;
+    }
+
+    .is-sp & {
+      font-size: 18px;
+    }
+  }
+
+  &__description {
+
+  }
+
+  &__copy {
+    font-size: 24px;
+
+    .is-tablet &{
+      font-size: 20px;
+    }
+
+    .is-sp &{
+      font-size: 18px;
+    }
+
+    line-height: 2em;
+    span {
+      background-color: $color-black;
+      color: $color-white;
+      padding-bottom: 4px;
+    }
+  }
+
+  &__date {
+    font-size: 24px;
+
+    .is-tablet &{
+      font-size: 20px;
+    }
+
+    .is-sp &{
+      font-size: 18px;
+    }
+
+    line-height: 2em;
+
+  }
+}
