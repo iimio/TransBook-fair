@@ -1,0 +1,11 @@
+.js-play-elastic {
+  bottom: 20px;
+  position: fixed;
+  right: 20px;
+  z-index: 1;
+  a {
+    font-size: 14px;
+    color: $color-black;
+    border-bottom: 1px solid $color-black;
+  }
+}

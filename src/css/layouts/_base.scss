@@ -21,12 +21,13 @@ $gritter: 8px;
 
   > span {
     //background-color: white;
-    border-bottom: 1px solid $color-black;
+    border-bottom: 2px solid $color-black;
   }
 }
 
 .section-content {
   font-size: 24px;
+  line-height: 1.6em;
   padding: 0 20px;
 
   .is-tablet & {

@@ -8,6 +8,8 @@ export default class Elastic {
    */
   constructor() {
     this._$elastic = $(".elastic");
+    this._$button = $('.js-play-elastic a');
+
     this._breakpoints = [
       {name: 'sp', width: 600},
       {name: 'tablet', width: 900},
@@ -20,6 +22,23 @@ export default class Elastic {
     this._interval = setInterval(() => {
       this._update();
     }, 1000 / 10);
+
+
+    this._playState = '-webkit-animation-play-state';
+    this._$button.on('click', () => {
+      this._$elastic.css(this._playState, function (i, v) {
+        return v === 'paused' ? 'running' : 'paused';
+      });
+      this._updateState();
+    });
+    this._updateState();
+  }
+
+  _updateState() {
+    let currentState = this._$elastic.css(this._playState);
+    $('body').toggleClass('paused', currentState === 'paused');
+    this._$button.text((currentState === 'running') ? 'Pause' : 'Play');
+
   }
 
   /**

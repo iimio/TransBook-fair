@@ -19,6 +19,10 @@
         &.facebook {
           background-color: $color-facebook;
         }
+
+        &:hover{
+          background-color: $color-black;
+        }
       }
     }
   }

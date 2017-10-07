@@ -1,29 +1,44 @@
 @keyframes elastic {
   0% {
     max-width: 100vw;
+    box-shadow: 0 0 10px #666;
   }
 
   40% {
+    height: 480px;
+    top: calc((100vh - 480px) / 2);
     max-width: 320px;
   }
 
-  50% {
+  60% {
+    height: 480px;
+    top: calc((100vh - 480px) / 2);
     max-width: 320px;
   }
 
   90% {
+    height: 100vh;
+    top: 0;
     max-width: 100vw;
   }
 
   100% {
+    height: 100vh;
+    top: 0;
     max-width: 100vw;
   }
 }
 
 .elastic {
-  //border-right: 1px solid $color-lightgray;
-  //border-left: 1px solid $color-lightgray;
   animation: elastic 120s 7s linear infinite;
   margin: 0 auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 100vh;
+  border: 1px $color-gray solid;
+
+  position: relative;
+  top: 0;
   width: 100vw;
+  -webkit-overflow-scrolling: touch;
 }
