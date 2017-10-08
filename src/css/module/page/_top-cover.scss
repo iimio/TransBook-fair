@@ -11,8 +11,11 @@
     background-size: contain;
     height: 86%;
     position: relative;
-    top: 7%
+    top: 7%;
 
+    img {
+      display: none;
+    }
   }
 }
 

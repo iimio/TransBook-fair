@@ -21,7 +21,7 @@ const cssOptionLive = {
   sourceComments: false
 };
 
-let cssOption = cssOptionDev;
+let cssOption = cssOptionLive;
 gulp.task('scss', function () {
   let processors = [
     cssnext()
