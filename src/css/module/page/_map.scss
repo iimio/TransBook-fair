@@ -4,6 +4,9 @@
   &__gmap {
     height: 600px;
     width: calc(100%);
+    .is-sp &{
+      height: 480px;
+    }
   }
 
   &__info {
