@@ -70,4 +70,18 @@
   .top-cover{
     animation: elastic-top-cover 120s 7s linear infinite;
   }
+
+  @include responsive(tablet){
+    animation: elastic 60s 7s linear infinite;
+    .top-cover{
+      animation: elastic-top-cover 60s 7s linear infinite;
+    }
+  }
+
+  @include responsive(sp){
+    animation: elastic 30s 7s linear infinite;
+    .top-cover{
+      animation: elastic-top-cover 30s 7s linear infinite;
+    }
+  }
 }
