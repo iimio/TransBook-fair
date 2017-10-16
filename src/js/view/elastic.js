@@ -26,7 +26,7 @@ export default class Elastic {
     }, 1000 / 10);
 
 
-    this._playState = '-webkit-animation-play-state';
+    this._playState = 'animation-play-state';
     this._$button.on('click', () => {
       this._$elastic.css(this._playState, function (i, v) {
         return v === 'paused' ? 'running' : 'paused';
