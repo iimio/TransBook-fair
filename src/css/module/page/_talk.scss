@@ -1,9 +1,9 @@
-.talk{
+.talk {
   width: 100%;
   margin-bottom: 64px;
   line-height: 2em;
 
-  &__head{
+  &__head {
     color: $color-white;
     margin: 1em 0 0 0;
     > span {
@@ -13,25 +13,33 @@
     }
   }
 
-  &__title{
-    margin-bottom:  64px;
+  &__title {
+    margin-bottom: 64px;
   }
-  &__section{
-    margin-top:  64px;
+  &__section {
+    margin-top: 64px;
     margin-bottom: 64px;
   }
 
-  &__content{
-    p{
+  &__content {
+    p {
       margin-top: 0.3em;
     }
   }
 
-  &__image{
+  &__image {
     width: 100%;
     margin: 24px auto;
     line-height: 1.5em;
-    img{
+
+    &.is-no-border {
+      img {
+        border: none;
+      }
+
+    }
+
+    img {
       vertical-align: bottom;
       width: 100%;
       border: 1px solid #f0f;
@@ -39,19 +47,19 @@
   }
 }
 
-.normal-box{
+.normal-box {
   max-width: 640px;
   padding-right: 20px;
   padding-left: 20px;
   margin-left: auto;
   margin-right: auto;
 
-  .section-content &{
+  .section-content & {
     padding-right: 0;
     padding-left: 0;
   }
 
-  a{
+  a {
     text-decoration: underline;
   }
 }
