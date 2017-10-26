@@ -43,20 +43,24 @@
   <meta name="twitter:image" content="http://transbooks.center/assets/images/og.jpg"/>
 
 </head>
-<body><script>
-  window.fbAsyncInit = function() {
+<body>
+<script>
+  window.fbAsyncInit = function () {
     FB.init({
-      appId      : '222778544923329',
-      xfbml      : true,
-      version    : 'v2.10'
+      appId: '222778544923329',
+      xfbml: true,
+      version: 'v2.10'
     });
     FB.AppEvents.logPageView();
   };
 
-  (function(d, s, id){
+  (function (d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) {return;}
-    js = d.createElement(s); js.id = id;
+    if (d.getElementById(id)) {
+      return;
+    }
+    js = d.createElement(s);
+    js.id = id;
     js.src = "//connect.facebook.net/en_US/sdk.js";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
@@ -73,7 +77,8 @@
     <div class="info">
       <div class="info__left">
         <h1 class="info__title"><span>TRANS BOOKS</span><br><span>トランスブックス</span></h1>
-        <h3 class="info__date"><span>2017年11月4日(土)、5日(日) 11:00 - 18:30</span> <br><span>at <a href="https://www.tam-tam.co.jp/coworking/" target="_blank">TAM コワーキング 神保町</a></span></h3>
+        <h3 class="info__date"><span>2017年11月4日(土)、5日(日) 11:00 - 18:30</span> <br><span>at <a
+                href="https://www.tam-tam.co.jp/coworking/" target="_blank">TAM コワーキング 神保町</a></span></h3>
       </div>
 
       <div class="info__right">
@@ -86,11 +91,14 @@
 
   <section class="introduction">
     <div class="introduction__message">
-      <p>2017年11月4日、5日の2日間、神保町・小川町のスペース「TAM コワーキング 神保町」に Trans Books というポップアップブックストアが開店します！</p>
-      <p>trans=「越えて」「横切って」という名を持つこのイベント、「TRANS BOOKS」は、メディアの横断をテーマにしたブックフェアです。大きな特徴としてメディアを問わず本という形式を取っているならば、どんなメディアの書籍でも販売できるブックフェアを目指しています。電子も非電子もそれ以外も、独創的な遊び心や探究心がある本をセレクト・制作し、販売します。</p>
+      <p>2017年11月4日、5日の2日間、神保町・小川町のスペース「TAM コワーキング 神保町」に TRANS BOOKS というポップアップブックストアが開店します！</p>
+      <p>trans=「越えて」「横切って」という名を持つこのイベント、「TRANS
+        BOOKS」は、メディアの横断をテーマにしたブックフェアです。大きな特徴としてメディアを問わず本という形式を取っているならば、どんなメディアの書籍でも販売できるブックフェアを目指しています。電子も非電子もそれ以外も、独創的な遊び心や探究心がある本をセレクト・制作し、販売します。</p>
       <p>2017年に本とは、私たちにとってどんな存在なのでしょうか。</p>
-      <p>本のかたちと内容は常に響きあいながら時代にあわせて変化しています。少し前までは電子書籍が推奨される風潮があり、全ての紙メディアが電子書籍に取って変われるような空気感がありました。しかし紙の書籍を選び読む人も常々おり、意図的に紙のみで出版される本も多数あります。</p>
-      <p>また、それとは別に本という言葉が持つ意味の幅がますます広くなり、例えば青空文庫のように文庫という名前ながらブラウザで本を読む電子図書館や、BCCKSなどのサービスのように、コンテンツがメディアを行き来している状況も興味深く感じます。</p>
+      <p>
+        本のかたちと内容は常に響きあいながら時代にあわせて変化しています。少し前までは電子書籍が推奨される風潮があり、全ての紙メディアが電子書籍に取って変われるような空気感がありました。しかし紙の書籍を選び読む人も常々おり、意図的に紙のみで出版される本も多数あります。</p>
+      <p>
+        また、それとは別に本という言葉が持つ意味の幅がますます広くなり、例えば青空文庫のように文庫という名前ながらブラウザで本を読む電子図書館や、BCCKSなどのサービスのように、コンテンツがメディアを行き来している状況も興味深く感じます。</p>
       <p>読み手としての私たちも、内容によって紙の本を選んだり、電子書籍を選んだりとコンテンツに合わせてメディアを選択することが日常となりました。</p>
       <p>「本」が様々なメディアを横断しているのが「いま」なのかもしれません。本の形式はデジタル端末の浸透にともなってさらに変化しようとしており、それとともに本に掲載できるコンテンツも多様性を帯びてきています。</p>
       <p>そんな本というメディアから様々な形に展開された書籍を集めてみたく、この度ブックフェアを企画する運びとなりました。「TRANS BOOKS」が変わり続けるいまの「本」を考えるブックフェアになれば幸いです。</p>
@@ -100,26 +108,32 @@
 
 
   <section class="artists">
-    <h1 class="section-head"><span>Participating Artists</span></h1>
+    <h1 class="section-head is-center"><span>Participating Artists</span></h1>
     <ul>
       <li><a href="http://harukaaramaki.tumblr.com" target="_blank">荒牧悠</a> <span class="small">(アーティスト)</span></li>
-      <li><a href="http://iimio.com/" target="_blank">飯沢未央</a> ✕ <a href="http://hatayurie.com" target="_blank">畑ユリエ</a> <span class="small">(アーティスト ✕ グラフィックデザイナー)</span></li>
+      <li><a href="http://iimio.com/" target="_blank">飯沢未央</a> ✕ <a href="http://hatayurie.com" target="_blank">畑ユリエ</a>
+        <span class="small">(アーティスト ✕ グラフィックデザイナー)</span></li>
       <li><a href="http://toruurakawa.com/" target="_blank">浦川通</a> <span class="small">(アーティスト)</span></li>
       <li><a href="http://ekrits.jp/" target="_blank">大林寛</a> <span class="small">(ÉKRITS編集長 / ディレクター)</span></li>
       <li><a href="http://and.jp.org" target="_blank">古賀稔章</a> <span class="small">(編集者・タイポグラフィ研究)</span></li>
       <li><a href="http://honkbooks.com/" target="_blank">コ本や</a> ✕ 小宮花店 <span class="small">(書店 ✕ 花屋)</span></li>
       <li><a href="https://note.mu/akiko_saito" target="_blank">齋藤あきこ</a> <span class="small">(ライター)</span></li>
       <li>ARTISTS’ BOOK EXHIBITION SENDAI⇄TOKYO <span class="small">(アーティストブックサテライト展示)</span></li>
-      <li><a href="http://syunichisuge.com" target="_blank">菅俊一</a> <span class="small">(研究者 / 映像作家 / 多摩美術大学専任講師)</span></li>
+      <li><a href="http://syunichisuge.com" target="_blank">菅俊一</a> <span class="small">(研究者 / 映像作家 / 多摩美術大学専任講師)</span>
+      </li>
       <li><a href="http://www.tezzosuzuki.com" target="_blank">鈴木哲生</a> <span class="small">(グラフィックデザイナー)</span></li>
-      <li><a href="http://study-tables.space" target="_blank">study tables</a> (tadahi・関真奈美) <span class="small">(自由研究制作ユニット)</span></li>
-      <li><a href="http://www.semitransparentdesign.com/" target="_blank">田中良治</a> <span class="small">(ウェブデザイナー)</span></li>
+      <li><a href="http://study-tables.space" target="_blank">study tables</a> (tadahi・関真奈美) <span class="small">(自由研究制作ユニット)</span>
+      </li>
+      <li><a href="http://www.semitransparentdesign.com/" target="_blank">田中良治</a> <span class="small">(ウェブデザイナー)</span>
+      </li>
       <li><a href="http://okikata.org" target="_blank">谷口暁彦</a>・谷口千絵 <span class="small">(アーティスト)</span></li>
       <li><a href="http://sotaro.dezaiso.jp/" target="_blank">出宰漱太郎</a> <span class="small">(字書き)</span></li>
       <li><a href="http://teraokagensyou.com" target="_blank">てらおか現象</a> <span class="small">(マンガ家)</span></li>
       <li>西岡真知子 <span class="small">(コールセンター勤務)</span></li>
-      <li><a href="http://www.nagaharaoffice.jp" target="_blank">永原康史</a> <span class="small">(グラフィックデザイナー、多摩美術大学教授)</span></li>
-      <li><a href="http://www.thebookshowup.com" target="_blank">Hyunho Choi</a> <span class="small">(グラフィックデザイナー)</span></li>
+      <li><a href="http://www.nagaharaoffice.jp" target="_blank">永原康史</a> <span
+              class="small">(グラフィックデザイナー、多摩美術大学教授)</span></li>
+      <li><a href="http://www.thebookshowup.com" target="_blank">Hyunho Choi</a> <span
+              class="small">(グラフィックデザイナー)</span></li>
       <li><a href="https://bccks.jp" target="_blank">BCCKS</a> <span class="small">(電子出版プラットフォーム)</span></li>
       <li><a href="http://www.sarubrunei.com" target="_blank">松本弦人</a> <span class="small">(グラフィックデザイナー)</span></li>
       <li><a href="http://murokao.tumblr.com/" target="_blank">室谷かおり</a> <span class="small">(グラフィックデザイナー)</span></li>
@@ -130,7 +144,7 @@
   </section>
 
   <section class="map">
-    <h1 class="section-head"><span>Access</span></h1>
+    <h1 class="section-head is-center"><span>Access</span></h1>
     <ul class="map__info">
       <li><span>都営新宿線「小川町」駅（B5出口 徒歩3分）</span></li>
       <li><span>丸ノ内線「淡路町」駅（B5出口 徒歩3分）</span></li>
@@ -146,25 +160,35 @@
 
 
   <section class="event">
-    <h1 class="section-head"><span>Events</span></h1>
+    <h1 class="section-head is-center"><span>Event</span></h1>
 
     <div class="section-content is-center">
-      11月4日 (土) 19:00 より出展作家によるトーク / レクチャーを開催予定！
+      <p>
+        11月4日 (土) 19:00 より、タイポグラフィ研究者 古賀稔章さんとグラフィックデザイナー 永原康史さんによるトークイベントが開催！
+      <p>
+        17世紀の本造りから、現在そして未来の書物について考える「未来の書物の歴史 New Series」、
+        トーク終了後に参加者のみなさまには、「トークをテキスト化した PDF
+        がいつか届く」という特典つき。どなたでもご来場いただけます！
+      </p>
+      <p>
+        <a class="circle-button" href="/event.html">詳細はこちら</a>
+      </p>
     </div>
   </section>
 
   <section class="sponsor">
-    <h1 class="section-head"><span>Special Thanks</span></h1>
+    <h1 class="section-head  is-center"><span>Special Thanks</span></h1>
 
     <div class="section-content is-center">
-      <div class="logos__item"><a href="https://www.tam-tam.co.jp/" target="_blank"><img src="/assets/images/logo-tam.png" alt="tam" width="128"></a></div>
+      <div class="logos__item"><a href="https://www.tam-tam.co.jp/" target="_blank"><img
+              src="/assets/images/logo-tam.png" alt="tam" width="128"></a></div>
     </div>
 
   </section>
 
   <footer>
     <section class="sns">
-      <h1 class="section-head"><span>Follow us on</span></h1>
+      <h1 class="section-head is-center"><span>Follow us on</span></h1>
       <ul class="sns__links">
         <li><a class="facebook" href="https://www.facebook.com/TRANS-BOOKS-1904466319881009"
                target="_blank">Facebook</a></li>
@@ -173,11 +197,15 @@
     </section>
 
     <div class="copyright">
-      <p>主催: TRANS BOOKS 運営委員会 2017 <br/>(<a href="http://iimio.com/" target="_blank">飯沢未央</a> / <a href="http://hatayurie.com" target="_blank">畑 ユリエ</a> / <a href="http://shunyahagiwara.com" target="_blank">萩原俊矢</a> / <a href="https://note.mu/akiko_saito" target="_blank">齋藤あきこ</a>)</p>
+      <p>主催: TRANS BOOKS 運営委員会 2017 <br/>(<a href="http://iimio.com/" target="_blank">飯沢未央</a> / <a
+              href="http://hatayurie.com" target="_blank">畑 ユリエ</a> / <a href="http://shunyahagiwara.com"
+                                                                         target="_blank">萩原俊矢</a> / <a
+              href="https://note.mu/akiko_saito" target="_blank">齋藤あきこ</a>)</p>
     </div>
 
   </footer>
 </div>
+
 
 <div class="js-play-elastic"><a href="javascript:void(0);"></a></div>
 
