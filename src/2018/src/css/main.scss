@@ -11,3 +11,23 @@
 
 @import "settings";
 @import "base";
+
+.origin-component{
+  h1 {
+    font-size: 24px;
+    padding-top: 4em;
+    padding-bottom: 1em;
+  }
+
+  h2 {
+    font-size: 18px;
+    padding-bottom: 1em;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+//
+@import "page/js-split";

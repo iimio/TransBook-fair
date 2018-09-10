@@ -1,0 +1,48 @@
+.js-split {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left:0;
+  background-color: lightgoldenrodyellow;
+
+
+  &.is-a{
+    top: 0;
+    height: 40vh;
+    left: 0;
+    width: 20%;
+    z-index: 2;
+    overflow-y: auto;
+    background-color: lightgoldenrodyellow;
+  }
+
+  &.is-b{
+    top: 0;
+    height: 30vh;
+    left: 20%;
+    width: 80%;
+    z-index: 2;
+    overflow-y: auto;
+    background-color: lightblue;
+  }
+
+  &.is-c{
+    top: 40vh;
+    height: 60vh;
+    left: 0;
+    width: 20%;
+    z-index: 2;
+    overflow-y: auto;
+    background-color: lightpink;
+  }
+  &.is-d{
+    top: 30vh;
+    height: 70vh;
+    left: 20%;
+    width: 80%;
+    z-index: 2;
+    overflow-y: auto;
+    background-color: lightgreen;
+  }
+}
