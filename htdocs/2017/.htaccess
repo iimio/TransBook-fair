@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^event.html$ /event/ [R=301,L]
