@@ -1,0 +1,18 @@
+.js-play-elastic {
+  bottom: 20px;
+  position: fixed;
+  right: 20px;
+  z-index: 1;
+
+  @include responsive(sp){
+    bottom: 5px;
+    right: 5px;
+
+  }
+
+  a {
+    font-size: 14px;
+    color: $color-black;
+    border-bottom: 1px solid $color-black;
+  }
+}

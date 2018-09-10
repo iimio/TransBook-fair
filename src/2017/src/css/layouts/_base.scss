@@ -1,0 +1,81 @@
+$gritter: 8px;
+
+.l-content {
+  margin: 0 auto;
+  margin-top: ($gritter*5);
+  max-width: 800px;
+}
+
+.section-head {
+  font-size: 24px;
+  margin: 64px 0 24px;
+  //text-align: center;
+
+  .is-tablet & {
+    font-size: 20px;
+  }
+
+  .is-sp & {
+    font-size: 16px;
+  }
+
+  > span {
+    border-bottom: 2px solid $color-black;
+  }
+
+  &--left {
+    text-align: left;
+  }
+  &--h2 {
+    color: $color-white;
+    margin: 0 0 24px 0;
+    font-weight: bold;
+    line-height: 2em;
+    @include responsive(sp){
+      font-size: 20px;
+    }
+    > span {
+      background: $color-black;
+    }
+  }
+}
+
+.section-content {
+  font-size: 24px;
+  line-height: 1.6em;
+  padding: 0 20px;
+
+  .is-tablet & {
+    font-size: 20px;
+  }
+
+  .is-sp & {
+    font-size: 16px;
+  }
+
+}
+
+.circle-button {
+  background-color: $color-black;
+  border-radius: 20px;
+  color: $color-white;
+  display: inline-block;
+  padding: 2px 20px;
+  min-width: 150px;
+  text-decoration: none !important;
+  font-size: 16px;
+  line-height: 1.6em;
+
+  &:hover {
+    background-color: $color-black;
+  }
+}
+
+.is-center {
+  text-align: center;
+}
+
+.is-left {
+  text-align: left;
+}
+

@@ -1,0 +1,24 @@
+.section {
+
+  padding: 20px 0;
+  border-top: 2px solid $color-white;
+  margin: 20px 0;
+
+  &__head {
+    text-align: center;
+    margin: 20px 0;
+    span {
+      font-weight: 600;
+      border-bottom: 3px solid $color-white;
+      font-size: $fs-xlarge;
+
+      @include less-tablet() {
+        font-size: $fs-large;
+      }
+
+      @include less-sp() {
+        font-size: $fs-medium;
+      }
+    }
+  }
+}
