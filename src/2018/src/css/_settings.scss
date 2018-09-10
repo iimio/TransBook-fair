@@ -1,0 +1,54 @@
+// font-family
+// ===========
+$font-family: "ProximaNovaA-Regular", YakuHanJP, "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "Helvetica Neue", Helvetica, Arial, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$font-family-bold: "ProximaNovaA-Regular", YakuHanJP, "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "Helvetica Neue", Helvetica, Arial, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+// z-index
+// =======
+$z-index-nav: 10;
+
+// color
+// =====
+$color-light-gray: #f2f2f2;
+$color-gray: #ededed;
+$color-dark-gray: #878787;
+$color-black: #726d6f;
+$color-white: #fff;
+$color-yellow: #e8b932;
+$color-blue: #3fbde0;
+$color-red: #933f3d;
+$color-light-red: rgba(147, 63, 61, 0.71);
+
+// 基準幅
+$base-width: 1280;
+$base-height: 980;
+$base-sp-width: 320;
+$base-sp-height: 600;
+
+$fs-def: 16px;
+$fs-70: calc(66.8px + 0.25vw); // 70-(1280*0.0025)
+$fs-50: calc(46.8px + 0.25vw); // 45-(1280*0.0025)
+$fs-45: calc(41.8px + 0.25vw); // 45-(1280*0.0025)
+$fs-40: calc(36.8px + 0.25vw); // 40-(1280*0.0025)
+$fs-26: calc(22.8px + 0.25vw); // 26-(1280*0.0025)
+$fs-22: calc(18.8px + 0.25vw); // 22-(1280*0.0025)
+$fs-20: calc(16.8px + 0.25vw); // 20-(1280*0.0025)
+$fs-18: calc(14.8px + 0.25vw); // 18-(1280*0.0025)
+$fs-16: calc(12.8px + 0.25vw); // 16-(1280*0.0025)
+$fs-14: calc(10.8px + 0.25vw); // 14-(1280*0.0025)
+$fs-12: calc(8.8px + 0.25vw); // 12-(1280*0.0025)
+
+
+$fs-sp-30: calc(29.2px + 0.25vw); // 30-(320*0.0025)
+$fs-sp-28: calc(27.2px + 0.25vw); // 28-(320*0.0025)
+$fs-sp-26: calc(25.2px + 0.25vw); // 26-(320*0.0025)
+$fs-sp-20: calc(19.2px + 0.25vw); // 20-(320*0.0025)
+$fs-sp-16: calc(15.2px + 0.25vw); // 15-(320*0.0025)
+$fs-sp-14: calc(13.2px + 0.25vw); // 13-(320*0.0025)
+$fs-sp-13: calc(12.2px + 0.25vw); // 12-(320*0.0025)
+$fs-sp-12: calc(11.2px + 0.25vw); // 12-(320*0.0025)
+$fs-sp-10: calc(9.2px + 0.25vw); // 10-(320*0.0025)
+
+$duration-hover-fast: 100ms;
+$duration-hover: 375ms;
+$duration-hover-slow: 900ms;

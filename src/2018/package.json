@@ -1,0 +1,28 @@
+{
+  "name": "trans-books-2018",
+  "version": "1.0.0",
+  "private": true,
+  "description": "a website for trans books 2018",
+  "scripts": {
+    "js": "webpack --progress --colors --watch",
+    "css": "gulp"
+  },
+  "author": "hgw",
+  "license": "ISC",
+  "homepage": "",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.6.1",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-watch": "^5.0.1",
+    "jquery": "^3.3.1",
+    "jquery.easing": "^1.4.1",
+    "postcss-cssnext": "^3.1.0",
+    "run-sequence": "^2.2.1",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {}
+}

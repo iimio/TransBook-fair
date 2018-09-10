@@ -1,0 +1,54 @@
+
+// Animations
+// ==========
+
+/**
+ * Custom Animations
+ *
+ * アニメーションを自由に設定する
+ *
+
+ @include customAnimation(animation-name, 5s, ease-in-out, infinite) {
+   0% {
+     top: 0;
+   }
+   50% {
+     top: 100%;
+   }
+   100% {
+     top: 0;
+   }
+ }
+
+*/
+@mixin customAnimation($animationName_, $duration_, $ease_, $delay_, $repeat_) {
+  @include keyframes($animationName_) {
+    @content;
+  }
+  @include animation($animationName_ $duration_ $ease_ $delay_ $repeat_);
+}
+
+// keyframes
+// =========
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+// clearfix（必要な場合のみ）
+@mixin clearfix{
+  &:before,&:after { content: ""; display: table;}
+  &:after {clear: both;}
+  zoom: 1;
+}

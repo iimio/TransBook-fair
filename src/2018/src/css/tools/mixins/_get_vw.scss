@@ -1,0 +1,11 @@
+@function get_vw($size, $base: 1280){
+  $rate : 100 / $base;
+  @return $rate * $size * 1vw;
+}
+
+
+@function get_vh($size, $base: 980){
+  $rate : 100 / $base;
+  @return $rate * $size * 1vh;
+}
+
