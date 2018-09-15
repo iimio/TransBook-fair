@@ -4,7 +4,7 @@
   "private": true,
   "description": "a website for trans books 2018",
   "scripts": {
-    "js": "webpack --progress --colors --watch",
+    "js": "webpack --progress --colors --watch --mode development",
     "css": "gulp"
   },
   "author": "hgw",
