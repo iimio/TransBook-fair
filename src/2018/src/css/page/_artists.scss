@@ -1,0 +1,15 @@
+.artists {
+  &__list {
+    li {
+      display: inline-block;
+      &:after{
+        content: ' / ';
+        padding: 0 0.5em 0 1em;
+        display: inline-block;
+      }
+      &:last-child:after{
+        content: '';
+      }
+    }
+  }
+}

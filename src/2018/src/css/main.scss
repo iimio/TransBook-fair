@@ -10,24 +10,9 @@
 @import "tools/plugins/yakuhanjp";
 
 @import "settings";
-@import "base";
-
-.origin-component{
-  h1 {
-    font-size: 24px;
-    padding-top: 4em;
-    padding-bottom: 1em;
-  }
-
-  h2 {
-    font-size: 18px;
-    padding-bottom: 1em;
-  }
-
-  p {
-    font-size: 16px;
-  }
-}
-
-//
+@import "resets/reset";
+@import "page/page-home";
 @import "page/js-split";
+@import "page/intro";
+@import "page/artists";
+@import "components/c-section";
