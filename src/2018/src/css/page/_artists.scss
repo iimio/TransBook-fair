@@ -2,14 +2,37 @@
   &__list {
     li {
       display: inline-block;
-      &:after{
+
+      a {
+        color: $color-black;
+      }
+
+      &:after {
         content: ' / ';
         padding: 0 0.5em 0 1em;
         display: inline-block;
       }
-      &:last-child:after{
+      &:last-child:after {
         content: '';
       }
     }
   }
 }
+
+.name {
+  &__full {
+    a{
+      position: relative;
+      display: inline-block;
+      line-height: 1;
+      border-bottom: 1px solid $color-black;
+    }
+  }
+
+  &__jt {
+    margin-left: 0.5em;
+    font-size: 13px;
+    color: $color-dark-gray;
+  }
+}
+
