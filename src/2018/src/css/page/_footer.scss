@@ -1,0 +1,43 @@
+.footer {
+  align-items: center;
+  display: flex;
+  text-align: left;
+  &__title {
+    flex-basis: 50%;
+    font-size: 16px;
+    padding-left: 1em;
+  }
+  &__fb {
+    align-items: center;
+    background: $color-facebook;
+    //border: 2px solid $color-facebook;
+    color: $color-white;
+    display: flex;
+    flex: 1;
+    font-size: 16px;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.3s $easeOutCirc;
+
+    &:hover {
+      background-color: rgba(59, 89, 152, 0.6);
+    }
+  }
+
+  &__tw {
+    align-items: center;
+    background: $color-twitter;
+    //border: 2px solid $color-twitter;
+    color: $color-white;
+    display: flex;
+    flex: 1;
+    font-size: 16px;
+    height: 100%;
+    justify-content: center;
+    transition: all 0.3s $easeOutCirc;
+    &:hover {
+      background-color: rgba(0, 172, 237, 0.6);
+    }
+  }
+}

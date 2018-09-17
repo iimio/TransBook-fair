@@ -5,7 +5,6 @@ export default class PseudoCover {
   constructor(el) {
     this._$el = $(el)
     this._$stage = $(this._$el.parents('.js-split--duplicated'))
-
     this._update()
 
   }

@@ -1,35 +1,97 @@
 .js-split {
-  position: relative;
-  width: 100%;
-  top: 0;
   left: 0;
   overflow-y: scroll;
+  position: relative;
+  top: 0;
   visibility: hidden;
+  width: 100%;
 
   &--duplicated {
-    visibility: visible;
-    border: 5px solid $color-white;
     background: $color-gray;
-    position: fixed;
-    z-index: 2;
-    overflow-y: hidden;
+    border: 5px solid $color-white;
     height: 100vh;
+    overflow-y: hidden;
+    position: fixed;
+    visibility: visible;
+    z-index: 2;
 
     &.is-1 {
-      animation: spread-1 120s linear infinite 7s;
+      animation: spread-1-v2 90s linear infinite 5s;
+      animation-fill-mode: both;
     }
 
     &.is-2 {
-      animation: spread-2 120s linear infinite 7s;
+      animation: spread-2-v2 90s linear infinite 5s;
+      animation-fill-mode: both;
     }
 
     &.is-3 {
-      animation: spread-3 120s linear infinite 7s;
+      animation: spread-3 120s linear infinite 5s;
     }
 
     &.is-4 {
-      animation: spread-4 120s linear infinite 7s;
+      animation: spread-4 120s linear infinite 5s;
     }
+  }
+}
+
+.js-split__footer {
+  position: fixed;
+  height: 60px;
+  background: $color-gray;
+  border-top: 10px solid $color-white;
+  bottom: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+
+@keyframes spread-1-v2 {
+  0% {
+    width: 50%;
+  }
+
+  20%, 25% {
+    width: calc(100% - 400px);
+  }
+
+  45%, 50% {
+    width: 50%;
+  }
+
+  70%, 75% {
+    width: 400px;
+  }
+
+  95%, 100% {
+    width: 50%;
+  }
+}
+
+@keyframes spread-2-v2 {
+  0% {
+    width: 50%;
+    left: 50%;
+  }
+
+  20%, 25% {
+    width: 400px;
+    left: calc(100% - 400px);
+  }
+
+  45%, 50% {
+    width: 50%;
+    left: 50%;
+  }
+
+  70%, 75% {
+    width: calc(100% - 400px);
+    left: 400px;
+  }
+
+  95%, 100% {
+    width: 50%;
+    left: 50%;
   }
 }
 
@@ -152,14 +214,14 @@
     left: 400px;
   }
 
-  20%,25% {
+  20%, 25% {
     width: calc(100% - 400px);
     height: 0;
     top: 0;
     left: 400px;
   }
 
-  45%,50% {
+  45%, 50% {
     width: 50%;
     height: 50%;
     top: 0;
