@@ -1,0 +1,15 @@
+.c-ta {
+  text-align: left;
+
+  &--l {
+    text-align: left;
+  }
+
+  &--c {
+    text-align: center;
+  }
+
+  &--r {
+    text-align: right;
+  }
+}

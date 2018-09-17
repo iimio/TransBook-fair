@@ -15,8 +15,8 @@ export default class PseudoResponsive {
     //   this._updateFontSize()
     // }, 1000)
 
-    //
-    // this._update()
+
+    this._update()
   }
 
   _update() {

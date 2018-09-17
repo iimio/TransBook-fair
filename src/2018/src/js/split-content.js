@@ -38,6 +38,9 @@ export default class SplitContent {
       this._doSyncScroll()
     })
 
+    setInterval(()=>{
+      this._doSyncScroll()
+    }, 1000/24)
   }
 
   _doSyncScroll() {
