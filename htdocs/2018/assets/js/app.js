@@ -109,6 +109,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 
 /***/ }),
 
+/***/ "./src/js/split-content-item.js":
+/*!**************************************!*\
+  !*** ./src/js/split-content-item.js ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return SplitContentItem; });\nclass SplitContentItem {\n\n  constructor(instance) {\n    this._el = instance\n    this._$el = $(this._el)\n  }\n\n\n  /**\n   *\n   * @param width\n   * @param height\n   */\n  setSize(width, height) {\n    this._$el.css({\n      width: width,\n      height: height\n    })\n  }\n\n\n  /**\n   *\n   */\n  setPosition(x, y) {\n    this._$el.css({\n      top: y,\n      left: x\n    })\n  }\n\n  setScrollPercentage(percentage_) {\n    let boxHeight = this._$el.height()\n    let boxChildHeight = this._$el.find('.js-split__child').height()\n    let y = (boxChildHeight - boxHeight) * percentage_\n    this._el.scrollTo(0, y)\n  }\n\n}\n\n\n//# sourceURL=webpack:///./src/js/split-content-item.js?");
+
+/***/ }),
+
 /***/ "./src/js/split-content.js":
 /*!*********************************!*\
   !*** ./src/js/split-content.js ***!
@@ -117,7 +129,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return SplitContent; });\nclass SplitContent {\n\n  constructor() {\n    this._$origin = $('.js-split');\n    this._$origin.remove();\n    this._duplicateContents(this._$origin.get(0), ['is-a', 'is-b', 'is-c', 'is-d']);\n  }\n\n  _duplicateContents(originDom, classes) {\n    let result = \"\";\n\n    for (let i = 0; i < classes.length; i += 1) {\n      let $newDom = $(`<div class=\"js-split ${classes[i]}\"></div>`);\n      $newDom.append($(originDom).html());\n      // $newDom.addClass(classes[i]);\n      $('body').append($newDom);\n    }\n\n    console.log('result', result);\n    return result;\n  }\n\n\n}\n\n\n//# sourceURL=webpack:///./src/js/split-content.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return SplitContent; });\n/* harmony import */ var _split_content_item__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./split-content-item */ \"./src/js/split-content-item.js\");\n\n\nclass SplitContent {\n\n  constructor() {\n\n    this._$window = $(window)\n\n    this._$origin = $('.js-split')\n    this._items = this._duplicateContents(this._$origin.get(0), ['is-1', 'is-2', 'is-3', 'is-4'])\n    this._addSyncEvents()\n    // this._animateInstances()\n  }\n\n  _duplicateContents(originDom, classes) {\n    for (let i = 0; i < classes.length; i += 1) {\n      let $newDom = $(`<div class=\"js-split js-split--duplicated ${classes[i]}\" data-itemid=\"dp-${i}\"></div>`)\n      $newDom.append($(originDom).html())\n      $('body').append($newDom)\n    }\n\n    let items = []\n    let $items = $('.js-split--duplicated')\n    for (let i = 0; i < $items.length; i++) {\n      items.push(new _split_content_item__WEBPACK_IMPORTED_MODULE_0__[\"default\"]($items[i]))\n    }\n    return items\n  }\n\n  /**\n   *\n   * @private\n   */\n  _addSyncEvents() {\n    this._$window.on(\"scroll\", (e) => {\n      this._doSyncScroll()\n    })\n\n  }\n\n  _doSyncScroll() {\n    let scrollTop = this._$window.scrollTop()\n    let scrollPercent = scrollTop / (($('body').height() - this._$window.innerHeight()))\n    for (let i = 0; i < this._items.length; i++) {\n      this._items[i].setScrollPercentage(scrollPercent)\n    }\n  }\n\n  _animateInstances() {\n    let stage = {\n      width: this._$window.innerWidth(),\n      height: this._$window.innerHeight()\n    }\n\n    let xPos = [\n      stage.width * 0.33333 * 0,\n      stage.width * 0.33333 * 1,\n      stage.width * 0.33333 * 2,\n    ]\n\n    let yPos = [\n      stage.height * 0.33333 * 0,\n      stage.height * 0.33333 * 1,\n      stage.height * 0.33333 * 2,\n    ]\n\n    let i = 0\n    for (let ix = 0; ix < 3; ix++) {\n      for (let iy = 0; iy < 3; iy++) {\n        let tarX = xPos[ix]\n        let tarY = yPos[iy]\n        this._items[i].setPosition(tarX, tarY)\n        this._items[i].setSize(stage.width * 0.33333, stage.height * 0.33333)\n        i += 1\n      }\n\n    }\n  }\n\n\n}\n\n\n//# sourceURL=webpack:///./src/js/split-content.js?");
 
 /***/ })
 

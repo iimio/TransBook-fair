@@ -1,57 +1,182 @@
 .js-split {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 100vh;
   top: 0;
-  left:0;
+  left: 0;
   overflow-y: scroll;
-  border: 1px solid $color-black;
+  visibility: hidden;
 
-  &.is-a{
+  &--duplicated {
+    visibility: visible;
+    border: 5px solid $color-white;
+    background: $color-gray;
+    position: fixed;
+    z-index: 2;
+    overflow-y: hidden;
+    height: 100vh;
+
+    &.is-1 {
+      animation: spread-1 120s linear infinite 7s;
+    }
+
+    &.is-2 {
+      animation: spread-2 120s linear infinite 7s;
+    }
+
+    &.is-3 {
+      animation: spread-3 120s linear infinite 7s;
+    }
+
+    &.is-4 {
+      animation: spread-4 120s linear infinite 7s;
+    }
+  }
+}
+
+@keyframes spread-1 {
+  0% {
+    width: 100%;
+    height: 100%;
     top: 0;
-    height: 50vh;
     left: 0;
-    width: 50%;
-    z-index: 2;
-    overflow-y: auto;
-    background-color: lightgoldenrodyellow;
-    border-top: none;
-    border-left: none;
   }
 
-  &.is-b{
+  20%, 25% {
+    width: 50%;
+    height: 100%;
     top: 0;
-    height: 50vh;
-    left: 50%;
-    width: 50%;
-    z-index: 2;
-    overflow-y: auto;
-    background-color: lightblue;
-    border-top: none;
-    border-right: none;
-  }
-
-  &.is-c{
-    top: 50vh;
-    height: 50vh;
     left: 0;
-    width: 50%;
-    z-index: 2;
-    overflow-y: auto;
-    background-color: lightpink;
-    border-bottom: none;
-    border-left: none;
   }
 
-  &.is-d{
-    top: 50vh;
-    height: 50vh;
-    left: 50%;
+  45%, 50% {
     width: 50%;
-    z-index: 2;
-    overflow-y: auto;
-    background-color: lightgreen;
-    border-bottom: none;
-    border-right: none;
+    height: 50%;
+    top: 50%;
+    left: 0;
+  }
+
+  70%, 75% {
+    width: 400px;
+    height: 50%;
+    top: 50%;
+    left: 0;
+  }
+
+  95%, 100% {
+    width: 400px;
+    height: 0%;
+    top: 100%;
+    left: 0;
+  }
+}
+
+@keyframes spread-2 {
+  0% {
+    width: 400px;
+    height: 100%;
+    top: 0;
+    left: calc(100%);
+  }
+
+  20%, 25% {
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 50%;
+  }
+
+  45%, 50% {
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+  }
+
+  70%, 75% {
+    width: calc(100% - 400px);
+    height: 50%;
+    top: 50%;
+    left: 400px;
+  }
+
+  95%, 100% {
+    width: calc(100% - 400px);
+    height: 0%;
+    top: 100%;
+    left: 400px;
+  }
+}
+
+@keyframes spread-3 {
+  0% {
+    width: 400px;
+    height: 0;
+    top: 0;
+    left: 0;
+  }
+
+  20%, 25% {
+    width: 400px;
+    height: 0;
+    top: 0;
+    left: 0;
+  }
+
+  45%, 50% {
+    width: 50%;
+    height: 50%;
+    top: 0%;
+    left: 0;
+  }
+
+  70%, 75% {
+    width: calc(100%);
+    height: 50%;
+    top: 0;
+    left: 0;
+  }
+
+  95%, 100% {
+    width: calc(100%);
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes spread-4 {
+  0% {
+    width: calc(100% - 400px);
+    height: 0;
+    top: 0;
+    left: 400px;
+  }
+
+  20%,25% {
+    width: calc(100% - 400px);
+    height: 0;
+    top: 0;
+    left: 400px;
+  }
+
+  45%,50% {
+    width: 50%;
+    height: 50%;
+    top: 0;
+    left: 50%;
+  }
+
+  70%, 75% {
+    width: 400px;
+    height: 50%;
+    top: 0;
+    left: calc(100%);
+  }
+
+  95%, 100% {
+    width: 400px;
+    height: 100%;
+    top: 0;
+    left: calc(100%);
   }
 }
