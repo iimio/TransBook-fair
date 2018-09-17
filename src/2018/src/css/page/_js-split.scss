@@ -16,12 +16,12 @@
     z-index: 2;
 
     &.is-1 {
-      animation: spread-1-v2 90s linear infinite 5s;
+      animation: spread-1-v2 100s linear infinite 5s;
       animation-fill-mode: both;
     }
 
     &.is-2 {
-      animation: spread-2-v2 90s linear infinite 5s;
+      animation: spread-2-v2 100s linear infinite 5s;
       animation-fill-mode: both;
     }
 
@@ -49,22 +49,27 @@
 @keyframes spread-1-v2 {
   0% {
     width: 50%;
+    //font-size: $fs-16;
   }
 
   20%, 25% {
     width: calc(100% - 400px);
+    //font-size: $fs-22;
   }
 
   45%, 50% {
     width: 50%;
+    //font-size: $fs-16;
   }
 
   70%, 75% {
     width: 400px;
+    //font-size: $fs-12;
   }
 
   95%, 100% {
     width: 50%;
+    //font-size: $fs-16;
   }
 }
 
@@ -72,26 +77,31 @@
   0% {
     width: 50%;
     left: 50%;
+    //font-size: $fs-16;
   }
 
   20%, 25% {
     width: 400px;
     left: calc(100% - 400px);
+    //font-size: $fs-12;
   }
 
   45%, 50% {
     width: 50%;
     left: 50%;
+    //font-size: $fs-16;
   }
 
   70%, 75% {
     width: calc(100% - 400px);
     left: 400px;
+    //font-size: $fs-22;
   }
 
   95%, 100% {
     width: 50%;
     left: 50%;
+    //font-size: $fs-16;
   }
 }
 

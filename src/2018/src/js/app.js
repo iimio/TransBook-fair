@@ -4,7 +4,7 @@ console.log('app start! 2018')
 
 import $ from 'jquery'
 import jQuery from 'jquery'
-import PseudoCover from "./window-cover"
+import PseudoResponsive from "./pseudo-responsive"
 
 window.$ = $
 window.jQuery = jQuery
@@ -19,7 +19,7 @@ export default class App {
 
     let covers = document.querySelectorAll('.js-split--duplicated .js-pseudo-cover')
     for (let i = 0; i < covers.length; i += 1) {
-      new PseudoCover(covers[i])
+      new PseudoResponsive(covers[i])
     }
 
   }

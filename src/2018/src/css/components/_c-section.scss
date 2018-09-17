@@ -3,12 +3,17 @@
   padding: 1em 1em 2em 1em;
 
   &__title {
+    font-size: 1.6em;
     text-align: center;
     padding: 1em 0;
+    h1{
+      font-size: 1em;
+    }
   }
 
   &__text {
-    font-size: 24px;
+    //font-size: 24px;
+    font-size: 1em;
     line-height: 2em;
   }
 }
