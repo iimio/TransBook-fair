@@ -25,11 +25,16 @@ export default class App {
 }
 
 $(function () {
-  new App()
+  window.app = new App()
 })
 
 window.initMap = function () {
-
+  if(!window.app){
+    setTimeout(()=>{
+      window.initMap()
+    }, 1000)
+    return false
+  }
 
   let pointTam = {lat: 35.6954747, lng: 139.7632313}
   let contentString = '<div class="gmp-info"><p class="gmp-info__text">〒101-0052<br/>東京都千代田区神田小川町3-28-9<br/>三東ビル1F </p><p class="gmp-info__text"><a href="https://goo.gl/maps/Nu7WpQCdS2U2" target="_blank" class="gmp-info__link">大きな地図でみる</a></p></div>'
@@ -57,5 +62,4 @@ window.initMap = function () {
     })
     infowindow.open(map, marker)
   }
-
 }
