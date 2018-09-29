@@ -1,19 +1,46 @@
 .c-section {
-  background: #eee;
-  padding: 1em 1em 2em 1em;
+  //background: #eee;
+  line-height: 2em;
+  @include fontsize(18);
+
+  @include responsive(sp){
+    @include fontsize(14);
+  }
+
+  p {
+    margin-bottom: 1em;
+  }
 
   &__title {
-    font-size: 1.6em;
+    border-bottom: 2px solid $color-black;
+    border-top: 2px solid $color-black;
+    font-size: 1em;
+    letter-spacing: 0.01em;
+    margin-bottom: 1em;
+    //background: $color-yellow;
+    //margin-left: -20px;
+    padding: 0.5em 0 0.5em 0;
     text-align: center;
-    padding: 1em 0;
-    h1{
+    text-transform: uppercase;
+    //width: calc(100% + 40px);
+    &.is-no-margin {
+      margin-bottom: 0;
+    }
+    h1 {
       font-size: 1em;
     }
   }
 
   &__text {
-    //font-size: 24px;
+    padding: 20px 20px 40px 20px;
     font-size: 1em;
     line-height: 2em;
+
+    @include responsive(sp){
+      padding: 5px 10px 20px 5px;
+    }
+  }
+  .small{
+    font-size: 0.7em;
   }
 }

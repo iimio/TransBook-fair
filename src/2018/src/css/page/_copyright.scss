@@ -1,0 +1,12 @@
+.copyright{
+  text-align: center;
+  padding: 0 20px;
+  padding-bottom: 40px;
+  @include fontsize(13);
+  @include responsive(sp){
+    @include fontsize(11);
+  }
+  a{
+    color: $color-black;
+  }
+}

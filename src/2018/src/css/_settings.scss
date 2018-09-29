@@ -1,8 +1,6 @@
 // font-family
 // ===========
-$font-family: "ProximaNovaA-Regular", YakuHanJP, "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "Helvetica Neue", Helvetica, Arial, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-$font-family-bold: "ProximaNovaA-Regular", YakuHanJP, "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic",  "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "Helvetica Neue", Helvetica, Arial, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-
+$font-family: YakuHanJP,'Open Sans', /*'Noto Sans JP',*/  "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "Helvetica Neue", Helvetica, Arial, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 // z-index
 // =======
 $z-index-nav: 10;

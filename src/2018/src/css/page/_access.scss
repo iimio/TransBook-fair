@@ -4,7 +4,7 @@
   padding: 0!important;
 
   &__meta {
-    background-color: #ddd;
+    //background-color: #ddd;
     &__inner{
       max-width: 800px;
       margin: 0 auto;
@@ -20,8 +20,11 @@
 
   &__info {
     flex: 1;
-    font-size: 14px;
-  }
+    padding: 20px 20px 40px 20px;
+    @include fontsize(14);
+    @include responsive(sp){
+      @include fontsize(12);
+    }  }
 
   &__gmap {
     position: relative;

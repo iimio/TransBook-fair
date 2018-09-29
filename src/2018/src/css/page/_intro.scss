@@ -1,5 +1,5 @@
 .intro {
-  background: #ddd;
+  //background: #ddd;
   &__visual {
     background: #eeeeee;
     text-align: center;
@@ -9,6 +9,9 @@
       width: 100%;
       height: 100%;
       object-fit: contain;
+      @include responsive(sp){
+      padding: 8px;
+      }
     }
   }
 
@@ -19,7 +22,7 @@
     padding: 40px 0 0 0;
     margin: 0 auto 0;
     line-height: 1;
-    font-size: 13px;
+    @include fontsize(13);
     &__inner{
       border-radius: 20px;
       display: inline-block;
@@ -32,8 +35,13 @@
     text-align: center;
     line-height: 2em;
     padding-top: 1em;
-    padding-bottom: 2em;
-    font-size: 1.6em;
+    padding-bottom: 1em;
+    @include fontsize(24);
+    @include responsive(sp){
+      @include fontsize(16);
+    }
 
+    background: #ccc;
+    color: $color-black;
   }
 }
