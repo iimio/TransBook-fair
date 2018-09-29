@@ -4,7 +4,7 @@
   &__tw {
     width: 40px;
     height: 40px;
-    @include fontsize(16);
+    @include fontsize(12);
     @include responsive(sp){
       @include fontsize(13);
     }
