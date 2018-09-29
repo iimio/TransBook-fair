@@ -13,13 +13,14 @@
     position: fixed;
     visibility: visible;
     z-index: 2;
-    border: 2px solid $color-black;
+    //border: 2px solid $color-black;
 
     &.is-1 {
       width: 75vw;
       height: 30vh;
       left: 0;
       top: 0;
+      border-bottom: 2px solid $color-black;
     }
 
     &.is-2 {
@@ -27,6 +28,7 @@
       height: 100vh;
       left: calc(75vw);
       top: 0;
+      border-left: 2px solid $color-black;
     }
 
     &.is-3 {
@@ -34,6 +36,7 @@
       height: 70vh;
       left:0;
       top: 30vh;
+      border-right: 2px solid $color-black;
     }
 
     &.is-4 {

@@ -8,10 +8,7 @@ export default class SplitContent {
 
     this._$origin = $('.js-split')
     this._items = this._duplicateContents(this._$origin.get(0), ['is-1', 'is-2', 'is-3', 'is-4'])
-    // this._items = this._duplicateContents(this._$origin.get(0), ['is-1', 'is-2'])
-    // this._items = this._duplicateContents(this._$origin.get(0), ['is-1'])
     this._addSyncEvents()
-    // this._animateInstances()
   }
 
   _duplicateContents(originDom, classes) {
