@@ -7,44 +7,54 @@
   width: 100%;
 
   &--duplicated {
-    background: $color-gray;
-    border: 5px solid $color-white;
+    background: $color-light-gray;
     height: 100vh;
     overflow-y: hidden;
     position: fixed;
     visibility: visible;
     z-index: 2;
+    border: 2px solid $color-black;
 
     &.is-1 {
-      animation: spread-1-v2 100s linear infinite 5s;
-      animation-fill-mode: both;
+      width: 75vw;
+      height: 30vh;
+      left: 0;
+      top: 0;
     }
 
     &.is-2 {
-      animation: spread-2-v2 100s linear infinite 5s;
-      animation-fill-mode: both;
+      width: 25vw;
+      height: 100vh;
+      left: calc(75vw);
+      top: 0;
     }
 
     &.is-3 {
-      animation: spread-3 120s linear infinite 5s;
+      width: 20vw;
+      height: 70vh;
+      left:0;
+      top: 30vh;
     }
 
     &.is-4 {
-      animation: spread-4 120s linear infinite 5s;
+      width: 55vw;
+      height: 70vh;
+      left:20vw;
+      top: 30vh;
     }
   }
 }
 
 .js-split__footer {
-  position: fixed;
-  height: 60px;
   background: $color-gray;
   border-top: 10px solid $color-white;
-  bottom: 0;
+  bottom: -60px;
+  height: 60px;
+  position: fixed;
   width: 100%;
   z-index: 5;
+  display: none !important;
 }
-
 
 @keyframes spread-1-v2 {
   0% {

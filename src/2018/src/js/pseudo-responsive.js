@@ -11,10 +11,6 @@ export default class PseudoResponsive {
       height: 0
     }
 
-    // setInterval(()=>{
-    //   this._updateFontSize()
-    // }, 1000)
-
 
     this._update()
   }
@@ -26,15 +22,6 @@ export default class PseudoResponsive {
     })
   }
 
-
-  // _updateFontSize(){
-  //   let maxPseudoWidth = this._$window.innerWidth() * 0.5
-  //   let percentage = (this._stageSize.width / maxPseudoWidth)
-  //   let fs = 12 + (percentage * 8)
-  //   this._$stage.css({
-  //     fontSize: Math.floor(fs) + 'px',
-  //   })
-  // }
 
   _resize() {
 
