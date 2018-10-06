@@ -3,7 +3,7 @@
   line-height: 2em;
   @include fontsize(18);
 
-  @include responsive(sp){
+  @include responsive(sp) {
     @include fontsize(14);
   }
 
@@ -15,14 +15,11 @@
     border-bottom: 2px solid $color-black;
     border-top: 2px solid $color-black;
     font-size: 1em;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.02em;
     margin-bottom: 1em;
-    //background: $color-yellow;
-    //margin-left: -20px;
     padding: 0.5em 0 0.5em 0;
     text-align: center;
     text-transform: uppercase;
-    //width: calc(100% + 40px);
     &.is-no-margin {
       margin-bottom: 0;
     }
@@ -32,15 +29,15 @@
   }
 
   &__text {
-    padding: 20px 20px 40px 20px;
     font-size: 1em;
     line-height: 2em;
+    padding: 20px 20px 40px 20px;
 
-    @include responsive(sp){
+    @include responsive(sp) {
       padding: 5px 10px 20px 5px;
     }
   }
-  .small{
+  .small {
     font-size: 0.7em;
   }
 }

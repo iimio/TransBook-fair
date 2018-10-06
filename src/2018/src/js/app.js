@@ -57,9 +57,9 @@ window.initMap = function () {
       position: pointTam,
       map: map
     })
-    let infowindow = new google.maps.InfoWindow({
-      content: contentString
-    })
-    infowindow.open(map, marker)
+    // let infowindow = new google.maps.InfoWindow({
+    //   content: contentString
+    // })
+    // infowindow.open(map, marker)
   }
 }

@@ -1,0 +1,93 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3652226, 2018-10-06T01:35:01-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: HelveticaNeueLTStd-Roman by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/neue-helvetica/pro-55-roman-189171/
+ * Copyright: Copyright &#x00A9; 1988, 1990, 1993, 2002 Adobe Systems Incorporated.  All Rights Reserved. &#x00A9; 1981, 2002 Heidelberger Druckmaschinen AG. All rights reserved.
+ * Licensed pageviews: 250,000
+ *
+ *
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3652226
+ *
+ * © 2018 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/37ba82");
+
+
+@font-face {font-family: 'HelveticaNeueLTStd-Roman';src: url('../webfonts//37BA82_0_0.eot');src: url('../webfonts//37BA82_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts//37BA82_0_0.woff2') format('woff2'),url('../webfonts//37BA82_0_0.woff') format('woff'),url('../webfonts//37BA82_0_0.ttf') format('truetype');}
+
+
+/*! Yaku Han JP (Gothic - All Include) v3.0.0 SIL by Qrac / Based on Noto Sans CJK JP */
+
+@font-face {
+  font-family: "YakuHanJP";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../webfonts//YakuHanJP/YakuHanJP-Thin.eot");
+  src: url("../webfonts//YakuHanJP/YakuHanJP-Thin.woff2") format("woff2"),
+  url("../webfonts//YakuHanJP/YakuHanJP-Thin.woff") format("woff");
+}
+
+@font-face {
+  font-family: "YakuHanJP";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../webfonts//YakuHanJP/YakuHanJP-Light.eot");
+  src: url("../webfonts//YakuHanJP/YakuHanJP-Light.woff2") format("woff2"),
+  url("../webfonts//YakuHanJP/YakuHanJP-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "YakuHanJP";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../webfonts//YakuHanJP/YakuHanJP-DemiLight.eot");
+  src: url("../webfonts//YakuHanJP/YakuHanJP-DemiLight.woff2") format("woff2"),
+  url("../webfonts//YakuHanJP/YakuHanJP-DemiLight.woff") format("woff");
+}
+
+@font-face {
+  font-family: "YakuHanJP";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../webfonts//YakuHanJP/YakuHanJP-Regular.eot");
+  src: url("../webfonts//YakuHanJP/YakuHanJP-Regular.woff2") format("woff2"),
+  url("../webfonts//YakuHanJP/YakuHanJP-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "YakuHanJP";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../webfonts//YakuHanJP/YakuHanJP-Medium.eot");
+  src: url("../webfonts//YakuHanJP/YakuHanJP-Medium.woff2") format("woff2"),
+  url("../webfonts//YakuHanJP/YakuHanJP-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "YakuHanJP";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../webfonts//YakuHanJP/YakuHanJP-Bold.eot");
+  src: url("../webfonts//YakuHanJP/YakuHanJP-Bold.woff2") format("woff2"),
+  url("../webfonts//YakuHanJP/YakuHanJP-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "YakuHanJP";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../webfonts//YakuHanJP/YakuHanJP-Black.eot");
+  src: url("../webfonts//YakuHanJP/YakuHanJP-Black.woff2") format("woff2"),
+  url("../webfonts//YakuHanJP/YakuHanJP-Black.woff") format("woff");
+}

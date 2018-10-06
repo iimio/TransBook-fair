@@ -1,25 +1,18 @@
 // font-family
 // ===========
-$font-family: YakuHanJP,'Open Sans', /*'Noto Sans JP',*/  "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "Helvetica Neue", Helvetica, Arial, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+$font-family: YakuHanJP, 'HelveticaNeueLTStd-Roman',"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "Helvetica Neue", Helvetica, Arial, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 // z-index
 // =======
 $z-index-nav: 10;
 
 // color
 // =====
-$color-light-gray: #f2f2f2;
-$color-gray: #ededed;
+$color-gray: #dfe0e2;
 $color-dark-gray: #666;
 $color-black: #000;
 $color-white: #fff;
-$color-yellow: #e8b932;
-$color-blue: #3fbde0;
-$color-red: #933f3d;
-$color-light-red: rgba(147, 63, 61, 0.71);
-
 $color-facebook: #3b5998;
 $color-twitter: #00aced;
-
 
 // 基準幅
 $base-width: 1280;
@@ -39,7 +32,6 @@ $fs-18: calc(14.8px + 0.25vw); // 18-(1280*0.0025)
 $fs-16: calc(12.8px + 0.25vw); // 16-(1280*0.0025)
 $fs-14: calc(10.8px + 0.25vw); // 14-(1280*0.0025)
 $fs-12: calc(8.8px + 0.25vw); // 12-(1280*0.0025)
-
 
 $fs-sp-30: calc(29.2px + 0.25vw); // 30-(320*0.0025)
 $fs-sp-28: calc(27.2px + 0.25vw); // 28-(320*0.0025)

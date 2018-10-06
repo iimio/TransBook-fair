@@ -1,21 +1,21 @@
 .intro {
-  //background: #ddd;
+  background: #000;
   &__visual {
     background: #000;
     text-align: center;
-    img{
+    img {
       padding: 40px;
       max-width: 800px;
       width: 100%;
       height: 100%;
       object-fit: contain;
-      @include responsive(sp){
-      padding: 8px;
+      @include responsive(sp) {
+        padding: 8px;
       }
     }
   }
 
-  &__title{
+  &__title {
     text-align: center;
     max-width: 640px;
     width: 100%;
@@ -23,7 +23,7 @@
     margin: 0 auto 0;
     line-height: 1;
     @include fontsize(13);
-    &__inner{
+    &__inner {
       border-radius: 20px;
       display: inline-block;
       background: #ddd;
@@ -31,17 +31,17 @@
     }
   }
 
-  &__sub-title{
+  &__sub-title {
     text-align: center;
     line-height: 2em;
     padding-top: 1em;
     padding-bottom: 1em;
     @include fontsize(24);
-    @include responsive(sp){
+    @include responsive(sp) {
       @include fontsize(16);
     }
 
-    background: #ccc;
+    background: $color-white;
     color: $color-black;
   }
 }

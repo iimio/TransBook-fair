@@ -1,0 +1,21 @@
+.c-fancyhover{
+  background: #fff;
+  padding: 2px;
+  color: $color-black;
+  &:hover{
+    animation: blink 0.7s steps(2) infinite;
+  }
+
+}
+
+@keyframes blink {
+  0%{
+    color: $color-white;
+  }
+  50%{
+    color: $color-black;
+  }
+  100% {
+    color: $color-white;
+  }
+}

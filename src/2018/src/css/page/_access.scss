@@ -1,11 +1,11 @@
 .access {
   position: relative;
   width: 100%;
-  padding: 0!important;
+  padding: 0 !important;
 
   &__meta {
     //background-color: #ddd;
-    &__inner{
+    &__inner {
       max-width: 800px;
       margin: 0 auto;
       display: flex;
@@ -18,13 +18,25 @@
     flex: 1;
   }
 
+  &__address {
+    padding: 15px 20px 0;
+    margin-bottom: 0;
+    line-height: 1.66em;
+    @include fontsize(14);
+    @include responsive(sp) {
+      @include fontsize(12);
+    }
+  }
+
   &__info {
     flex: 1;
-    padding: 20px 20px 40px 20px;
+    padding: 0 20px 40px 20px;
+    line-height: 1.66em;
     @include fontsize(14);
-    @include responsive(sp){
+    @include responsive(sp) {
       @include fontsize(12);
-    }  }
+    }
+  }
 
   &__gmap {
     position: relative;
