@@ -20,6 +20,11 @@
 
 .name {
   font-size: 20px;
+
+  @include responsive(sp){
+    font-size: 14px;
+  }
+
   &__full {
     a{
       position: relative;
