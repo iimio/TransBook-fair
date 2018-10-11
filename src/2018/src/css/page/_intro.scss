@@ -34,8 +34,7 @@
   &__sub-title {
     text-align: center;
     line-height: 2em;
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 1em 10px;
     @include fontsize(24);
     @include responsive(sp) {
       @include fontsize(16);
@@ -43,5 +42,19 @@
 
     background: $color-white;
     color: $color-black;
+  }
+
+  &__description{
+    text-align: center;
+    line-height: 1.33em;
+    padding: 2em 10px;
+    background: $color-gray;
+    @include fontsize(20);
+    @include responsive(sp) {
+      @include fontsize(16);
+    }
+    h2{
+      margin-bottom: 0.6em;
+    }
   }
 }

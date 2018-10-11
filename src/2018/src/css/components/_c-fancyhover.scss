@@ -1,18 +1,26 @@
-.c-fancyhover{
+.c-fancyhover {
   background: #fff;
   padding: 2px;
   color: $color-black;
-  &:hover{
+  &:hover, &.is-mouseover {
     animation: blink 0.7s steps(2) infinite;
   }
+}
 
+.c-normalhover {
+  color: $color-black;
+  padding: 0;
+  text-decoration: underline;
+  &:hover, &.is-mouseover {
+  text-decoration: none;
+  }
 }
 
 @keyframes blink {
-  0%{
+  0% {
     color: $color-white;
   }
-  50%{
+  50% {
     color: $color-black;
   }
   100% {
