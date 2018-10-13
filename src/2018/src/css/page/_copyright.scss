@@ -5,6 +5,7 @@
   @include fontsize(13);
   @include responsive(sp){
     @include fontsize(11);
+  padding: 0 10px;
   }
   a{
     color: $color-black;

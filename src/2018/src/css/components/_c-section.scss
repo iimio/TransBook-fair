@@ -34,6 +34,7 @@
     padding: 20px 20px 40px 20px;
 
     @include responsive(sp) {
+    line-height: 1.666em;
       padding: 5px 10px 20px 5px;
     }
   }

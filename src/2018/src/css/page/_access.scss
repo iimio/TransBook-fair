@@ -24,6 +24,7 @@
     line-height: 1.66em;
     @include fontsize(14);
     @include responsive(sp) {
+    padding: 15px 10px 0;
       @include fontsize(12);
     }
   }
@@ -34,6 +35,7 @@
     line-height: 1.66em;
     @include fontsize(14);
     @include responsive(sp) {
+    padding: 0 10px 40px 10px;
       @include fontsize(12);
     }
   }
