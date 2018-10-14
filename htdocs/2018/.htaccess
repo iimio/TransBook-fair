@@ -1,0 +1,5 @@
+#AuthUserFile /home/users/2/lomo.jp-ilove/web/transbooks.center/2018/.htpasswd
+#AuthGroupFile /dev/null
+#AuthName "tb2018"
+#AuthType Basic
+#require valid-user
