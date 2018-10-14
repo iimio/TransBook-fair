@@ -1,6 +1,6 @@
 import SplitContent from "./split-content"
 
-console.log('app start! 2018')
+console.log('App start: TB2018')
 
 import $ from 'jquery'
 import jQuery from 'jquery'
