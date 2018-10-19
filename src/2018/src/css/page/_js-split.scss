@@ -6,6 +6,10 @@
   visibility: hidden;
   width: 100%;
 
+  .is-ie &{
+    visibility: visible;
+  }
+
   &--duplicated {
     background: $color-gray;
     height: 100vh;

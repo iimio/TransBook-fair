@@ -5,6 +5,7 @@ console.log('App start: TB2018')
 import $ from 'jquery'
 import jQuery from 'jquery'
 import PseudoResponsive from "./pseudo-responsive"
+import bowser from 'bowser'
 
 window.$ = $
 window.jQuery = jQuery
@@ -20,6 +21,12 @@ export default class App {
     // 各リンクにクラスをつける
     this._setMarksOnLinks()
 
+    let browser = bowser.getParser(window.navigator.userAgent)
+
+    if( browser.getBrowserName() =="Internet Explorer"){
+      $('body').addClass('is-ie')
+      return;
+    }
 
     // 画面を分割する
     new SplitContent()
@@ -98,7 +105,7 @@ window.initMap = function () {
       map: map
     })
 
-    marker.addListener('click', function(){
+    marker.addListener('click', function () {
       window.open().location.href = 'https://goo.gl/maps/Nu7WpQCdS2U2'
     })
 

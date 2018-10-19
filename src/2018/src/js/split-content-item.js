@@ -33,7 +33,7 @@ export default class SplitContentItem {
     let boxHeight = this._$el.height()
     let boxChildHeight = this._$el.find('.js-split__child').height()
     let y = (boxChildHeight - boxHeight) * percentage_
-    this._el.scrollTo(0, y)
+    // this._el.scrollTo(0, y)
+    this._el.scrollTop = y
   }
-
 }
