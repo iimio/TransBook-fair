@@ -21,13 +21,6 @@ export default class App {
     // 各リンクにクラスをつける
     this._setMarksOnLinks()
 
-    let browser = bowser.getParser(window.navigator.userAgent)
-
-    if( browser.getBrowserName() =="Internet Explorer"){
-      $('body').addClass('is-ie')
-      return;
-    }
-
     // 画面を分割する
     new SplitContent()
 
