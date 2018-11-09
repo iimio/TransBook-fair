@@ -99,3 +99,23 @@
 .is-center{
   text-align: center;
 }
+
+.booking{
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(0,0,0,0.8);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  a{
+    max-width: 600px;
+
+    width: 75%;
+    display: block;
+    @include fontsize(18)
+  }
+}
