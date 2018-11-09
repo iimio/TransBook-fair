@@ -5,7 +5,7 @@
     width: 40px;
     height: 40px;
     @include fontsize(12);
-    @include responsive(sp){
+    @include responsive(sp) {
       @include fontsize(13);
     }
     line-height: 40px;
@@ -37,13 +37,14 @@
   }
 }
 
-.sponsor{
-  &__logo{
-    img.logo-tam{
-      width: 100%;
-      max-width: 96px;
-      height: auto;
-      padding: 5px;
+.sponsor {
+  &__logo-set {
+    padding: 10px;
+  }
+
+  &__logo {
+    img {
+      vertical-align: middle;
     }
   }
 }
