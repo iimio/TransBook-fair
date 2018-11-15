@@ -40,11 +40,61 @@
 .sponsor {
   &__logo-set {
     padding: 10px;
+    @include responsive(sp) {
+     padding: 3px;
+    }
   }
 
   &__logo {
     img {
       vertical-align: middle;
+
+      &.is-tam{
+        width: 76px;
+        height: auto;
+        @include responsive(sp) {
+          width: 38px;
+        }
+      }
+
+      &.is-ototoy{
+        width: 100px;
+        height: auto;
+        @include responsive(sp) {
+          width: 50px;
+        }
+      }
+      &.is-plus{
+        width: 14px;
+        height: auto;
+        @include responsive(sp) {
+          width: 7px;
+        }
+
+      }
+      &.is-bccks{
+        width: 90px;
+        height: auto;
+        @include responsive(sp) {
+          width: 45px;
+        }
+      }
+      &.is-tambourine{
+        width: 128px;
+        height: auto;
+        @include responsive(sp) {
+          width: 64px;
+        }
+      }
+      &.is-cbc{
+        width: 56px;
+        height: auto;
+        @include responsive(sp) {
+          width: 28px;
+        }
+
+      }
+
     }
   }
 }
