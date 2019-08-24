@@ -1,0 +1,85 @@
+@keyframes anim-a {
+  0% {
+    background-position-y: 0;
+  }
+  100%{
+    background-position-y: -1000000vh;
+  }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue", YakuHanJP, 'HelveticaNeueLTStd-Roman', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "Helvetica Neue", Helvetica, Arial, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.head h1, .head h2 {
+  font-size: 2vw;
+}
+
+.artists{
+  margin-top: 2vh;
+  font-size: 0.8em;
+}
+.enter{
+  margin-top: 2vh;
+  font-size: 2em;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5vh;
+  align-items: center;
+}
+
+.post__visual {
+  width: 25vw;
+}
+
+.post__visual img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.post__info {
+  width: 70vw;
+  font-size: 1.5vw;
+}
+
+.v-loop {
+  display: block;
+  height: 40vh;
+  animation: anim-a 300000s linear infinite;
+}
+
+.v-loop.is-2018 {
+  background-image: url(../../2018/assets/images/cover.jpg);
+  background-size: contain;
+  background-position: center;
+}
+
+.v-loop.is-2017 {
+  background-image: url(../../2017/assets/images/cover.jpg);
+  background-size: contain;
+  background-position: center;
+}
