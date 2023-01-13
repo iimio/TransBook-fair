@@ -22,7 +22,7 @@
     "postcss-cssnext": "^3.1.0",
     "run-sequence": "^2.2.1",
     "webpack": "^4.17.2",
-    "webpack-cli": "^3.1.0"
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "@babel/core": "^7.1.2",
